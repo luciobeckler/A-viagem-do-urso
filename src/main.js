@@ -8,22 +8,34 @@ function moveUrso(image, event) {
       alteraPosicao(image, event)
 }
 
-function pulaUrso(image, i) {
-      if (i < 5) {
-            positionY = positionY - 10
-            image.style.top = positionY + 'px'
-            console.log('aaaaa')
-      }
-}
 
+/* MEXER NESSA FUNÇÃO AMANHÃ */
 function alteraPosicao(image, event) {
       if (event.key == 'd' && positionX <= 1444) positionX = positionX + 5
+
       else if (event.key == 'a' && positionX >= -17) positionX = positionX - 5
+
       else if (event.key == 'w') {
             image.src = 'images/urso-2.png'
-
             for (let i = 0; i < 10; i++) {
-                  setInterval(pulaUrso(image, i), 1000)
+                  setTimeout(function (i) {
+                        {
+                              setTimeout(function (i) {
+                                    for (let i = 0; i < 5; i++) {
+                                          positionY = positionY + 2
+                                          image.style.top = positionY + 'px'
+                                          console.log('pula')
+                                    }
+                              }, 1000)
+                              for (let i = 0; i < 5; i++) {
+                                    positionY = positionY - 2
+                                    image.style.top = positionY + 'px'
+                                    console.log('pula')
+
+                              }
+
+                        }
+                  }, 1000)
             }
       }
 
