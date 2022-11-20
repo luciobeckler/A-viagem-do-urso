@@ -1,0 +1,26 @@
+Esta atividade consiste em 2 partes, que devem ser feitas em 
+arquivos html separados:
+
+a) Use as imagens em anexo para reproduzir a animação que aparece
+ no gif "passo-urso.gif".
+Para isso, será necessário usar técnicas de Javascript e CSS para 
+alterar o estilo da página de maneira dinâmica.
+
+Dica 1: para inserir uma imagem centralizada, você pode usar as 
+seguintes propriedades de CSS:
+        background: url("cenario.png") no-repeat center center 
+        fixed;
+        background-size: cover;
+
+Dica 2: Para a animação, tente usar javascript para alterar o 
+estilo de tempos em tempos.
+
+b) Com base nos recursos usados para resolver a primeira questão e 
+também o que aprendeu sobre captura e tratamento de eventos em 
+Javascript, faça com que o personagem se movimente a partir de 
+comandos do teclado.
+- Tecla "A": mover para a esquerda
+- Tecla "D": mover para a direita
+- Tecla "W": pular
+
+Dica 3: para inverter imagens, você pode usar a propriedade CSS  transform: scaleX(-1);

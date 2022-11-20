@@ -1,0 +1,32 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.cenario{
+    background: url("../images/cenario.png") no-repeat center center fixed;
+        background-size: cover;
+}
+
+.urso{
+    height: 75px;
+    width: 75px;
+    left: 1%;
+    top: 65%;
+    position: relative;
+}
+
+
+/* 1x635 */
+
