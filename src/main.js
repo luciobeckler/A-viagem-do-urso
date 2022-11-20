@@ -1,5 +1,5 @@
 var positionX = 0
-var positionY = 0
+var positionY = 492
 
 function moveUrso(image, event) {
       if (image.src.match('urso-1')) image.src = 'images/urso-2.png'
@@ -10,7 +10,9 @@ function moveUrso(image, event) {
 
 function pulaUrso(image, i) {
       if (i < 5) {
-            image.style.top = image.style.bottom + + 'px'
+            positionY = positionY - 10
+            image.style.top = positionY + 'px'
+            console.log('aaaaa')
       }
 }
 
@@ -21,7 +23,7 @@ function alteraPosicao(image, event) {
             image.src = 'images/urso-2.png'
 
             for (let i = 0; i < 10; i++) {
-                  setInterval(pulaUrso(image, i), 500)
+                  setInterval(pulaUrso(image, i), 1000)
             }
       }
 
